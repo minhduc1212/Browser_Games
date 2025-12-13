@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Superfighters Offline</title>
+    <style>
+        body { margin: 0; background-color: #000; overflow: hidden; }
+        /* Căn giữa màn hình chơi game */
+        canvas {
+            display: block;
+            margin: 0 auto;
+            /* Một số game yêu cầu full màn hình */
+            width: 100vw; 
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+
+    <script src="Superfighters.js"></script>
+
+    <script>
+        // Đoạn script phụ để debug (xem lỗi)
+        window.onload = function() {
+            console.log("Đã tải file JS. Kiểm tra xem game có tự chạy không...");
+        };
+    </script>
+</body>
+</html>
